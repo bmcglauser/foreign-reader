@@ -10,7 +10,7 @@ import { GoogleBox } from "../components/GoogleBox";
 
 const Home: NextPage = () => {
   const [clickedWord, setClickedWord] = React.useState<string | null>(null);
-  const [translations, setTranslations] = React.useState<ITranslation[]>([]);
+  const [translations, setTranslations] = React.useState<string>("");
 
   React.useEffect(() => {
     if (clickedWord) {
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         setTranslations(res.data);
       });
     } else {
-      setTranslations([]);
+      setTranslations("");
     }
   }, [clickedWord]);
 
