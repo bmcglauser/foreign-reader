@@ -21,7 +21,7 @@ export const GoogleBox: React.FC = () => {
         className="w-full border border-b-0 p-1 px-2 flex-grow"
       ></textarea>
       <a
-        href={`https://translate.google.com/?sl=de&tl=en&text=${googleText}&op=translate`}
+        href={`https://translate.google.com/?sl=ar&tl=en&text=${googleText}&op=translate`}
         target="_blank"
         className="bg-gray-300 hover:bg-gray-400 self-stretch text-center py-2"
       >
